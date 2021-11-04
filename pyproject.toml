@@ -8,6 +8,7 @@ authors = ["bashar adel taamneh <bashartaamneh55@gmail.com>"]
 python = "^3.9"
 black = "^21.10b0"
 flake8 = "^4.0.1"
+Faker = "^9.8.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

@@ -79,4 +79,57 @@ def extract_contacts(file_path):
     return phone_numbers
 
 
-print(extract_contacts("automation/potential-contacts.txt"))
+# print(extract_contacts("automation/potential-contacts.txt"))
+
+
+
+
+
+
+# //////////////////////////////////////////////////////////////////////////////////////////////////
+
+# from faker import Faker
+
+# fake = Faker('en_US')
+
+# potential_contacts = ""
+
+# existing_contacts = ""
+
+# for i in range(100):
+
+#     email = fake.email()
+#     phone_number = fake.phone_number()
+
+#     potential_contacts += fake.paragraph()
+#     potential_contacts += " " + email + " "
+#     potential_contacts += fake.paragraph()
+#     potential_contacts += fake.ssn()
+#     potential_contacts += fake.sentence()
+#     potential_contacts += phone_number
+#     potential_contacts += fake.paragraph()
+
+#     if i % 7 == 0: # every now and then throw in a duplicate email
+#         potential_contacts += " " + email + " "
+#         potential_contacts + fake.sentence()
+
+#     if i % 9 == 0: # every now and then throw in a duplicate phone number
+#         potential_contacts += phone_number
+#         potential_contacts += fake.paragraph()
+
+
+#     if i % 5 == 0: # keep track of some "existing contacts" for the stretch goal
+#         existing_contacts += email + "\n"
+#         existing_contacts += phone_number + "\n"
+
+
+#     potential_contacts += "\n"
+
+# with open("potential-contacts.txt", "w+") as f:
+#     f.write(potential_contacts)
+
+
+# # for stretch goal
+# with open("existing-contacts.txt", "w+") as f:
+#     f.write(existing_contacts)
+
